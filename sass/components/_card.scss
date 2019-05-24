@@ -1,0 +1,20 @@
+.card {
+    // css properties to rotate smoothly
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+
+
+    &__side {
+        background-color: orangered;
+        color: white;
+        font-size: 2rem;
+        height: 50rem;
+        transition: all .8s;
+    }
+
+    // Rotating 180 deg on hover and 
+    &:hover &__side{
+        transform: rotateY(180deg);
+    }
+
+}
