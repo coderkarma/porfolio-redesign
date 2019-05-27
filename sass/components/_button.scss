@@ -10,13 +10,13 @@
         transition: all .2s;
         position: relative;
         font-size: $default-font-size;
-        background-color: $color-white;
-        color: $color-black;
+        background-color: $color-primary;
+        color: $color-white;
 
         &:hover {
             transform: translateY(-3px);
             box-shadow: 0 1rem 2rem rgba($color-black, .2);
-
+        
             &::after {
                 /* increase the size when it is in hover state */
                 transform: scaleX(1.4) scaleY(1.6);
@@ -35,6 +35,16 @@
 
             &::after {
                 background-color: $color-white;
+            }
+
+        }
+
+        &--green {
+            background-color: $color-primary;
+            color: $color-white;
+
+            &::after {
+                background-color: $color-primary;
             }
 
         }
